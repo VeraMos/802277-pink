@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>PINK</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="76" height="26" alt="PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="contest">
+      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="contest_description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
+      <form class="contest_form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="contest_form-label" for="surname">Фамилия:</label>
+        <input type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+        <label class="contest_form-label" for="name">Имя:</label>
+        <input type="text" name="name" id="name" placeholder="Введите ваше имя *">
+        <label class="contest_form-label" for="patronymic">Отчество:</label>
+        <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+        <fieldset class="contest_filters">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <ul class="contest_filters-list">
+            <li class="contest_filter-item">
+              <div class="checkbox">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="selfie" id="selfie" checked>
+                <label for="selfie">Сделал селфи с акулой</label>
+              </div>
+            </li>
+            <li class="contest_filter-item">
+              <div class="checkbox">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
+                <label for="sunburn">Обгорел на пляже</label>
+              </div>
+            </li>
+            <li class="contest_filter-item">
+              <div class="checkbox">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="star" id="star">
+                <label for="star">Видел Чака Норриса</label>
+              </div>
+            </li>
+            <li class="contest_filter-item">
+              <div class="checkbox">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="buy-souvenir" id="buy-souvenir">
+                <label for="buy-souvenir">Накупил сувениров</label>
+              </div>
+            </li>
+            <li class="contest_filter-item">
+              <div class="checkbox">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="kept-tower" id="kept-tower" checked>
+                <label for="kept-tower">Удержал башню</label>
+              </div>
+            </li>
+            <li class="contest_filter-item">
+              <div class="checkbox">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="deform-hotel" id="deform-hotel">
+                <label for="deform-hotel">Разгромил отель</label>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <label class="contest_form-label" for="tel">Номер телефона</label>
+        <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+        <label class="contest_form-label" for="email">Адрес почты</label>
+        <input type="email" name="email" id="email" placeholder="Введите почту *">
+        <fieldset>
+          <legend>С каким приложением путешествовали?</legend>
+          <ul class="contest_radio-list">
+          <li class="contest_radio-item">
+          </li>
+            
+          </li>
+          </ul>
+        </fieldset>
+      </form>
+      </section>
+    </main>
+  </body>
+  </html>
