@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>PINK</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -33,8 +34,8 @@
       <h1 class="visually-hidden">Мобильное приложение «ПИНК» – расскрасит серые будни в розовый цвет</h1>
       <section class="links-application">
         <h2 class="visually-hidden">Ссылки на приложение</h2>
-        <div class="links-application_img">
-          <img class="links-application_image" src="img/#.jpg" width="256" height="285" alt="Характеристики приложения">
+        <div class="links-application__img">
+          <img class="links-application__image" src="img/#.jpg" width="256" height="285" alt="Характеристики приложения">
         </div>
         <div class="links-application__about">
         <a class="links-application__btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
@@ -109,68 +110,30 @@
       <section class="rates">
         <div class="rates__wrapper slider">
           <h2 class="visually-hidden">Тарифы</h2>
-          <ul class="rates__list slider__list">
-          <li class="rates__item slider__item">
-            <table>
-            <tr>
-              <th>Стандарт</th>
-              <th>3.99 USD</th>
+          <div class="rates__list slider__list">
+            <table class="rates__table">
+            <tr class="rates__table-title">
+              <th>Стандарт&#10; 3.99 USD</th>
+              <th>Стандарт&#10; 3.99 USD</th>
+              <th>Стандарт&#10; 3.99 USD</th>
             </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td><svg></svg></td>
+            <tr class="rates__table-line">
+              <td>Розовый фильтр<svg></svg></td>
+              <td>Розовый фильтр<svg></svg></td>
+              <td>Розовый фильтр<svg></svg></td>
             </tr>
-            <tr>
-              <td>Смайлик</td>
-              <td><svg></svg></td>
+            <tr class="rates__table-line">
+              <td>Смайлик<svg></svg></td>
+              <td>Смайлик<svg></svg></td>
+              <td>Смайлик<svg></svg></td>
             </tr>
-            <tr>
-              <td>Комментарии</td>
-              <td><svg></svg></td>
-            </tr>
-            </table>
-          </li>
-          <li class="rates__item slider__item">
-            <table>
-            <tr>
-              <th>Стандарт</th>
-              <th>3.99 USD</th>
-            </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td><svg></svg></td>
-            </tr>
-            <tr>
-              <td>Смайлик</td>
-              <td><svg></svg></td>
-            </tr>
-            <tr>
-              <td>Комментарии</td>
-              <td><svg></svg></td>
+            <tr class="rates__table-line">
+              <td>Комментарии<svg></svg></td>
+              <td>Комментарии<svg></svg></td>
+              <td>Комментарии<svg></svg></td>
             </tr>
             </table>
-          </li>
-          <li class="rates__item slider__item">
-            <table>
-            <tr>
-              <th>Стандарт</th>
-              <th>3.99 USD</th>
-            </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td><svg></svg></td>
-            </tr>
-            <tr>
-              <td>Смайлик</td>
-              <td><svg></svg></td>
-            </tr>
-            <tr>
-              <td>Комментарии</td>
-              <td><svg></svg></td>
-            </tr>
-            </table>
-          </li>
-          </ul>
+          </div>
           <p class="rates__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
@@ -182,20 +145,22 @@
         <h2 class="visually-hidden">Контактная информация</h2>
           <p class="contacts__text">Остались вопросы?</p>
           <p class="contacts__text">Свяжитесь с нами!</p>
-          <ul class="contacts__item">
+          <ul class="contacts__list">
             <li class="contacts__item">
-             <p class="contacts__item-name">Звоните:</p>
-             <p class="contacts__item-info">
-              <a href="tel:+78125556666">+7(812)555-66-66</a></p>
+              <p class="contacts__item-name">Звоните:</p>
+              <p class="contacts__item-info">
+                <a href="tel:+78125556666">+7(812)555-66-66</a>
+              </p>
             </li>
             <li class="contacts__item">
-             <p class="contacts__item-name">Пишите:</p>
-             <p class="contacts__item-info">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+              <p class="contacts__item-name">Пишите:</p>
+              <p class="contacts__item-info">
+                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </p>
             </li>
             <li class="contacts__item">
-             <p class="contacts__item-name">Приезжайте в гости:</p>
-             <p class="contacts__item-info">ул. Большая Конюшенная, 19/8</p>
+              <p class="contacts__item-name">Приезжайте в гости:</p>
+              <p class="contacts__item-info">ул. Большая Конюшенная, 19/8</p>
             </li>
           </ul>
           <div class="contacts__map">
@@ -205,4 +170,5 @@
     </main>
   </body>
 </html>
+
 
