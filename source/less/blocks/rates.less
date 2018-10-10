@@ -12,54 +12,47 @@
 }
 
 .rates__list {
-
+	padding: 0 20px;
+	overflow: hidden;
 }
 
 .rates__table {
+	width: 300%;
 	margin-bottom: 40px;
-
+	margin-left: -100%;
 }
 
 .rates__table-title th{
-	width: 320px;
+	width: 33.333333%;
 	min-height: 100px;
 	background-color: @base-color;
 	color:#ffffff;
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 	padding-top: 26px;
 	padding-bottom: 26px;
+	padding-left: 80px;
+	padding-right: 80px;
 	span {
 		font-size: 24px;
-		font-weight: lighter;
-	}
-	&:nth-child(2) {
-		display: none;
-	}
-	&:nth-child(3) {
-		display: none;
+		font-weight: 300;
 	}
 }
 
 .rates__table-line td{
 
-	width: 276px;
+	width: 280px;
 	min-height: 59px;
 	padding-top: 23px;
 	padding-bottom: 23px;
-	padding-left: 45px;
-	color:@base-color;
+	padding-left: 22px;
+	padding-right: 17px;
+	color: @base-color;
 	background-color: #ffffff;
 	line-height: 30px;
 	text-transform: uppercase;
-	&:nth-child(2) {
-		display: none;
-	}
-	&:nth-child(3) {
-		display: none;
-	}
 	svg {
 		width: 31px;
 		height: 21px;
@@ -68,6 +61,7 @@
 }
 
 .rates__toggles {
+	margin: 0;
 	text-align: center;
 	padding-bottom: 48px;
 }
