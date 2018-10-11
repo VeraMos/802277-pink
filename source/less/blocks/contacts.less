@@ -1,0 +1,69 @@
+.contacts {
+
+	min-height: 413px;
+	color: #283645;
+	text-align:center;
+	padding-top: 43px;
+
+}
+
+.contacts__text {
+	margin: 0;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 300;
+
+}
+
+.contacts__list {
+	list-style: none;
+	margin:0;
+	padding: 40px;
+	padding-bottom: 45px;
+}
+
+.contacts__item {
+	padding-bottom: 30px;
+	&:nth-child(2) {
+		padding-bottom: 35px;
+	}
+	&:nth-child(3) {
+		padding-bottom: 0;
+	}
+}
+
+.contacts__item-name {
+	margin:0;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	padding-bottom: 14px;
+	&:first-child {
+		padding-bottom: 12px;
+	}
+}
+
+.contacts__item-info {
+	padding: 0;
+	margin: 0;
+	font-size: 24px;
+	color: @base-color_red;
+	font-weight: 300;
+	a{
+		color:@base-color_red;
+	}
+}
+
+.contacts__map {
+	min-height: 203px;
+	background-image: 
+	url("../img/bg-triangle-white-footer.svg"),
+	url("../img/bg-map-mobile@1x.png");
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100%, 100%;
+	background-position: top, bottom;
+}
+
+.contacts__map-iframe {
+	border:none;
+}
