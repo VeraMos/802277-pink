@@ -9,7 +9,8 @@ html {
 }
 
 .wrapper {
-	width: 320px;
+	min-width: 320px;
+	padding:0 20px;
 	margin: 0 auto;
 	position: relative;
 	background-color: #ffffff;
@@ -34,8 +35,12 @@ a {
 	text-decoration: none;
 }
 
-/*img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-}*/
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+	.wrapper {
+		padding:0 10px;
+	}
+}

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>PINK</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <div class="wrapper">
@@ -51,10 +52,10 @@
               <input class="contest__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </label>
           </div>
-          <fieldset class="contest__filters contest__checkbox">
+          <fieldset class="contest__filters contest__filters--checkbox">
             <p class="contest__filters-title">
             Ваши безбашенные&#10; достижения в путешествии</p>
-            <ul class="contest__filters-list">
+            <ul class="contest__filters-list contest__filters-list--checkbox">
               <li class="contest__filters-item">
                 <input class="visually-hidden contest__filters-checkbox" type="checkbox" name="selfie" id="selfie" checked>
                 <label class="contest__filters-label" for="selfie">Сделал селфи с акулой</label>
@@ -81,15 +82,17 @@
               </li>
             </ul>
           </fieldset>
-          <div class="contest__wrapper">
-            <label class="contest__label"><span class="contest__text">Номер телефона</span>
+          <div class="contest__wrapper contest__wrapper--short">
+            <p class="contest__name">Контактная информация
+            </p>
+            <label class="contest__label contest__label--column"><span class="contest__text contest__text--column">Номер телефона</span>
               <input class="contest__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
             </label>
-            <label class="contest__label"><span class="contest__text">Адрес почты</span>
+            <label class="contest__label contest__label--column"><span class="contest__text contest__text--column">Адрес почты</span>
               <input class="contest__input" type="email" name="email" placeholder="Введите почту *">
             </label>
           </div>
-          <fieldset class="contest__filters contest__radio">
+          <fieldset class="contest__filters contest__filters--radio">
             <p class="contest__filters-title">С каким приложением путешествовали?</p>
             <ul class="contest__filters-list">
               <li class="contest__filters-item">
@@ -106,13 +109,17 @@
               </li>
             </ul>
           </fieldset>
+          <div class="contest__textarea--wrap">
           <label class="contest__label--feeling" for="textarea">Опишите свои эмоции</label>
           <textarea id="textarea" class="contest__feeling" cols="280" rows="200">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </div>
+          </form>
+          <div class="contest__button--wrap">
           <button class="contest__btn" type="submit">Отправить форму</button>
-        </form>
         <small class="contest__legend ">
           <sup>*</sup> — обязательные поля
         </small>
+        </div>
       </section>
     </main>
     <footer class="page-footer">

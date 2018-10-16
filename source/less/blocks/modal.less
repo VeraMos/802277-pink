@@ -1,4 +1,5 @@
 .modal {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	&--error {
 		min-height:291px;
 	}
@@ -43,18 +44,19 @@
 
 .modal__button-wrap--gray{
 	width: 320px;
-	min-height: 162px;
+	padding-top: 46px;
+	padding-bottom: 50px;
 	padding-left: 20px;
 	padding-right: 20px;
 	background-color: @base-color_gray;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 .modal__button {
 	width: 280px;
-	min-height: 59px;
 	.btn();
 }
 
@@ -62,5 +64,43 @@
 	width: 320px;
 	padding-left: 20px;
 	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
+@media (min-width: @tablet-width) {
+	.modal {
+		width: 460px;
+		&--success {
+			min-height: 423px;
+		}
+		&--error {
+			min-height: 356px;
+		}
+	}
+	.modal__title {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.modal-text {
+		font-size: 18px;
+	}
+	.modal__button-wrap--gray {
+		width: 100%;
+	}
+	.modal__button {
+		width: 300px;
+	}
+	.modal__button-wrap {
+		width: 100%;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.modal {
+		width: 783px;
+		height: 375px;
+	}
+}
