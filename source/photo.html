@@ -8,9 +8,14 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="wrapper page-header__wrapper">
       <div class="page-header__top">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="76" height="26" alt="PINK">
+        <picture>
+          <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
+          <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="PINK">
+      </picture>
       </a>
       </div>
       <nav class="main-nav">
@@ -32,25 +37,28 @@
           </ul>
         </div>
       </nav>
+    </div>
     </header>
     <main class="page-main">
       <section class="photo">
         <div class="photo__title-wrapper">
-          <h1>Фотографии пользователей</h1>
-          <p class="photo__description">Взгляните на фотографии, которые выкладывают пользователи!&#10; Видите, как не хватает ваших?</p>
-        </div>
-        <div class="wrapper">
+          <div class="wrapper">
+            <h1 class="photo__title">Фотографии<br> пользователей</h1>
+          </div>
+          </div>
+          <div class="wrapper">
+          <p class="photo__description">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
       <ul class="photo__list">
-        <li class="photo__item--panorama">
+        <li class="photo__item photo__item--panorama">
           <article class="photo__acticle">
-            <a href="#" class="photo__image--panorama">
+            <a href="#" class="photo__image photo__image--panorama">
               <picture>
                 <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)">
                 <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
               <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
             </picture>
             </a>
-          <section class="photo__photo-info--panorama">
+          <section class="photo__photo-info photo__photo-info--panorama">
             <cite class="photo__author-name">Анна <time class="photo__datetime" datetime="2018-07-24T18:18">(5 минут назад)</time></cite>
             <blockquote class="photo__blockquote">
               <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -177,8 +185,9 @@
         </article>
         </li>
       </ul>
-      </section>
     </div>
+      </section>
+      <div class="wrapper">
       <section class="photo__post-photo">
         <p class="photo__post-title">Затмите их всех!</p>
         <p class="photo__post-title">Выкладывайте все, что накопилось в телефоне!</p>
@@ -212,19 +221,19 @@
               <div class="photo__filter-range">
                 <input class="photo__input" type="range" id="range-crop">
                 <input class="photo__input" type="range" id="range-fill">
-                <input class="post__input" type="range" id="range-contrast">
+                <input class="photo__input" type="range" id="range-contrast">
               </div>
           </div>
           <div class="photo__button">
-          <button class="photo__button-checked" type="submit">Запостить</button>
-          <button class="photo__button-disabled" type="reset">Отмена</button>
+          <button class="photo__button photo__button-checked" type="submit">Запостить</button>
+          <button class="photo__button photo__button-disabled" type="reset">Отмена</button>
           </div>
-        </div>
         </form>
+      </div>
       </section>
     </main>
 <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="wrapper page-footer__wrapper">
           <a class="page-footer__logo" href="index.html">
             <img src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="PINK">
           </a>

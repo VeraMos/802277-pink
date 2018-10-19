@@ -1,0 +1,23 @@
+.copyright {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.copyright__text {
+	margin-right: 15px;
+}
+
+.copyright__link-btn {
+	fill: @base-color_red;
+	svg {
+		display: block;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.copyright {
+	text-align: right;
+	justify-content: flex-end;
+}
+}

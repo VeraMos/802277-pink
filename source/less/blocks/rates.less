@@ -1,8 +1,4 @@
 .rates {
-
-}
-
-.rates__wrapper {
 	padding-top: 75px;
 	padding-bottom: 48px;
 	background-color: @base-color_gray;
@@ -12,8 +8,13 @@
 	background-position: 0 -68px;
 }
 
+.rates__wrapper {
+
+}
+
 .rates__list {
 	padding: 0 20px;
+	margin: 0 -20px;
 	overflow: hidden;
 	margin-bottom: 40px;
 }
@@ -65,13 +66,10 @@
 	.rates__first-column {
 		.visually-hidden()
 	}
-	.page-footer {
-		.visually-hidden()
-	}
 }
 
 @media (min-width: @tablet-width) {
-	.rates__wrapper {
+	.rates {
 		background-size: 100%;
 		background-position: -10px 0;
 	}
