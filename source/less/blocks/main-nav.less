@@ -1,5 +1,8 @@
 .main-nav {
-
+	margin: 0 -20px;
+	background-color: @base-color;
+	display: flex;
+	flex-direction: column;
 }
 
 .main-nav__toggle {
@@ -31,5 +34,34 @@
 	padding: 15px 20px;
 	a {
 		color:#ffffff;
+	}
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+	.main-nav {
+		flex-direction:row;
+		align-self: center;
+		background-color: transparent;
+	}
+	.main-nav__wrapper {
+	}
+	.main-nav__list {
+	width: 655px;
+	text-align: left;
+	display: flex;
+	}
+
+	.main-nav__item {
+	line-height: 18px;
+	font-weight: normal;
+	text-transform: none;
+	border: none;
+	}
+	.main-nav__toggle {
+		display: none;
 	}
 }
