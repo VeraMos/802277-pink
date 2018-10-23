@@ -48,9 +48,9 @@
           </div>
         </div>
         <div class="wrapper">
-          <p class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу<br> бонусную карту! Пожалуйста, заполните <span class="contest__text-hidden">форму ниже:</span></p>
+          <p class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на<br> вашу бонусную карту!<span class="contest__text-hidden"> Пожалуйста, заполните форму ниже:</span></p>
         <form class="contest__form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="contest__wrapper">
+          <div class="contest__wrapper contest__wrapper-name">
             <label class="contest__label"><span class="contest__text">Фамилия:</span>
               <input class="contest__input" type="text" name="surname" placeholder="Укажите фамилию *">
             </label>
@@ -65,29 +65,29 @@
             <p class="contest__filters-title contest__filters-title--checkbox">
             Ваши безбашенные&#10; достижения в путешествии</p>
             <ul class="contest__filters-list contest__filters-list--checkbox">
-              <li class="contest__filters-item">
+              <li class="contest__filters-item contest__filters-item--checkbox">
                 <input class="visually-hidden contest__filters-checkbox" type="checkbox" name="selfie" id="selfie" checked>
-                <label class="contest__filters-label" for="selfie">Сделал селфи с акулой</label>
+                <label class="contest__filters-label contest__filters-label--checkbox" for="selfie">Сделал селфи с акулой</label>
               </li>
-              <li class="contest__filters-item">
+              <li class="contest__filters-item contest__filters-item--checkbox">
                 <input class="visually-hidden contest__filters-checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
-                <label class="contest__filters-label" for="sunburn">Обгорел на пляже</label>
+                <label class="contest__filters-label contest__filters-label--checkbox" for="sunburn">Обгорел на пляже</label>
               </li>
-              <li class="contest__filters-item">
+              <li class="contest__filters-item contest__filters-item--checkbox">
                 <input class="visually-hidden contest__filters-checkbox" type="checkbox" name="star" id="star">
-                <label class="contest__filters-label" for="star">Видел Чака Норриса</label>
+                <label class="contest__filters-label contest__filters-label--checkbox" for="star">Видел Чака Норриса</label>
               </li>
-              <li class="contest__filters-item">
+              <li class="contest__filters-item contest__filters-item--checkbox">
                 <input class="visually-hidden contest__filters-checkbox" type="checkbox" name="buy-souvenir" id="buy-souvenir">
-                <label class="contest__filters-label" for="buy-souvenir">Накупил сувениров</label>
+                <label class="contest__filters-label contest__filters-label--checkbox" for="buy-souvenir">Накупил сувениров</label>
               </li>
-              <li class="contest__filters-item">
+              <li class="contest__filters-item contest__filters-item--checkbox">
                 <input class="visually-hidden contest__filters-checkbox" type="checkbox" name="kept-tower" id="kept-tower" checked>
-                <label class="contest__filters-label" for="kept-tower">Удержал башню</label>
+                <label class="contest__filters-label contest__filters-label--checkbox" for="kept-tower">Удержал башню</label>
               </li>
-              <li class="contest__filters-item">
+              <li class="contest__filters-item contest__filters-item--checkbox">
                 <input class="visually-hidden contest__filters-checkbox" type="checkbox" name="deform-hotel" id="deform-hotel">
-                <label class="contest__filters-label" for="deform-hotel">Разгромил отель</label>
+                <label class="contest__filters-label contest__filters-label--checkbox" for="deform-hotel">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
@@ -105,16 +105,16 @@
           </div>
           <fieldset class="contest__filters contest__filters--radio">
             <p class="contest__filters-title contest__filters-title--radio">С каким приложением путешествовали?</p>
-            <ul class="contest__filters-list">
-              <li class="contest__filters-item">
+            <ul class="contest__filters-list contest__filters-list--radio">
+              <li class="contest__filters-item contest__filters-item--radio">
                 <input class="visually-hidden contest__filters-radio" type="radio" name="attachment" value="attachment-ios" id="pink-ios" checked>
                 <label class="contest__filters-label" for="pink-ios">Pink для iOS</label>
               </li>
-              <li class="contest__filters-item">
+              <li class="contest__filters-item contest__filters-item--radio">
                 <input class="visually-hidden contest__filters-radio" type="radio" name="attachment" value="pink-android" id="pink-android">
                 <label class="contest__filters-label" for="pink-android">Pink на Android</label>
               </li>
-              <li class="contest__filters-item">
+              <li class="contest__filters-item contest__filters-item--radio">
                 <input class="visually-hidden contest__filters-radio" type="radio" name="attachment" value="windows-phone" id="windows-phone">
               <label class="contest__filters-label" for="windows-phone">Windows Phone</label>
               </li>
@@ -125,10 +125,10 @@
           <textarea id="textarea" class="contest__feeling" cols="280" rows="200">Можно прям в красках, не стесняясь в выражениях</textarea>
           </div>
           </form>
-          <div class="contest__button--wrap">
+          <div class="contest__button-wrap">
           <button class="contest__btn" type="submit">Отправить форму</button>
         <small class="contest__legend ">
-          <sup>*</sup> — обязательные поля
+          <sup>*</sup> — обязательные <span>для заполнения</span> поля
         </small>
         </div>
       </div>
@@ -170,7 +170,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link-btn" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">

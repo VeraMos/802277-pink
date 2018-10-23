@@ -50,7 +50,8 @@
           <p class="photo__description">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
       <ul class="photo__list">
         <li class="photo__item photo__item--panorama">
-          <article class="photo__acticle">
+          <article class="photo__acticle photo__acticle--panorama">
+            <p class="photo__img-panorama">Панорама дня</p>
             <a href="#" class="photo__image photo__image--panorama">
               <picture>
                 <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)">
@@ -193,7 +194,11 @@
         <p class="photo__post-title">Выкладывайте все, что накопилось в телефоне!</p>
         <form class="photo__post-form">
           <div class="photo__post-image">
-            <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография">
+            <picture>
+                <source srcset="img/photo-road-desktop@1x.jpg" media="(min-width: 960px)">
+                <source srcset="img/photo-road-tablet@1x.jpg" media="(min-width: 660px)">
+            <img src="img/photo-road-mobile@1x.jpg" alt="Фотография">
+          </picture>
           </div>
           <div class="photo__wrapper">
           <div class="photo__filter-post">
@@ -268,7 +273,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link-btn" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">

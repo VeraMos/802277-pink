@@ -43,19 +43,20 @@
 
 @media (min-width: @desktop-width) {
 	.main-nav {
-		flex-direction:row;
-		align-self: center;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 		background-color: transparent;
 	}
 	.main-nav__wrapper {
 	}
 	.main-nav__list {
 	width: 655px;
-	text-align: left;
 	display: flex;
 	}
 
 	.main-nav__item {
+	padding-right: 50px;
 	line-height: 18px;
 	font-weight: normal;
 	text-transform: none;
