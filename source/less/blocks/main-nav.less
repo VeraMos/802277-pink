@@ -53,14 +53,19 @@
 	.main-nav__list {
 	width: 655px;
 	display: flex;
+	justify-content: space-between;
 	}
 
 	.main-nav__item {
-	padding-right: 50px;
+	padding: 3px 5px 4px 9px;
 	line-height: 18px;
 	font-weight: normal;
 	text-transform: none;
 	border: none;
+	&:last-child {
+		padding-right: 16px;
+		padding-left: 20px;
+	}
 	}
 	.main-nav__toggle {
 		display: none;
