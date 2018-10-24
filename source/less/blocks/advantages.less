@@ -1,6 +1,5 @@
 .advantages {
-	min-height: 800px;
-	padding-top: 47px;
+	padding-top: 42px;
 
 }
 
@@ -11,7 +10,7 @@
 
 .advantages__slogan {
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 31px;
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 300;
@@ -33,9 +32,9 @@
 
 .advantages__list {
 	list-style: none;
-	margin: 0;
+	margin: 0 0 13px 0;
 	padding: 0;
-	padding-top: 55px;
+	padding-top: 73px;
 	text-align: center;
 }
 
@@ -55,7 +54,7 @@
 
 .advantages__description {
 	margin: 0;
-	padding: 0 30px 40px;
+	padding: 0 0px 28px;
 }
 
 .advantages__photo {
@@ -70,7 +69,7 @@
 @media (min-width: @tablet-width) {
 .advantages__header {
 	margin: 0;
-	padding: 60px 0 27px;
+	padding: 10px 0 17px;
 }
 
 .advantages__slogan {
@@ -87,8 +86,7 @@
 }
 
 .advantages__list {
-
-	padding-top: 30px;
+	padding: 68px 0 0 0px;
 	text-align: left;
 
 }
@@ -99,14 +97,14 @@
 }
 
 .advantages__title {
-	margin: 0;
 	padding-left: 10px;
-	padding-bottom: 17px;
+	margin: 0;
+	padding-bottom: 12px;
 }
 
 .advantages__description {
 	padding-left: 10px;
-	padding-bottom: 43px;
+	padding-bottom: 33px;
 }
 
 .advantages__photo {
@@ -115,27 +113,42 @@
 }
 }
 @media (min-width: @desktop-width) {
+	.advantages__info {
+	padding-top: 0px;
+}
 	.advantages__photo {
 		.visually-hidden();
 	}
+	.advantages__slogan {
+	margin: -10px 0 0;
+	font-size: 50px;
+	line-height: 65px;
+	&:last-child {
+		margin-bottom: 0; 
+	}
+}
 	.advantages__list {
+		padding: 55px 0 0 0;
 		display: flex;
-		justify-content: space-around;
+		flex-direction: row;
 	}
 	.advantages__item {
 	width: 33.3333%;
 	text-align: center;
 }
 	.advantages__title {
-		padding-top: 60px;
-		padding-bottom: 23px;
+		padding: 48px 0 23px 0;
 		font-size: 30px; 
 		color:#000000;
 		line-height: 30px;
-	}
+}
+
 	.advantages__description {
-		padding-left: 10px;
+		width: 245px;
+		padding-left: 0px;
 		padding-bottom: 43px;
+		font-size: 18px;
+		line-height: 30px;
 }
 }
 
@@ -146,12 +159,21 @@
 	}
 	}
 }
+@media (max-width: 959px) {
+	.advantages__title {
+		br {
+			display: none;
+		}
+	}
+}
 
 @media (max-width: 659px) {
 	.advantages__slogan {
 		br {
-			.visually-hidden()
+			display: none;
 		}
 	}
 }
+
+
 

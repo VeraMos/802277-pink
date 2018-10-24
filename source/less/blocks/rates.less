@@ -1,6 +1,5 @@
 .rates {
-	padding-top: 75px;
-	padding-bottom: 48px;
+	padding: 90px 0 46px;
 	background-color: @base-color_gray;
 	background-image: 
 	url("../img/bg-triangle-white.svg");
@@ -16,7 +15,7 @@
 .rates__list {
 	padding: 0 20px;
 	margin: 0 -20px;
-	margin-bottom: 40px;
+	margin-bottom: 26px;
 }
 
 .rates__table {
@@ -25,28 +24,30 @@
 }
 
 .rates__table-title th{
-	width: 33.333333%;
+	width: 280px;
 	background-color: @base-color;
 	color:#ffffff;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding-top: 26px;
-	padding-bottom: 26px;
+	padding: 18px 0 21px;
 	span {
 		display: block;
 		font-size: 24px;
 		font-weight: 300;
 	}
+	&:nth-child(3) {
+		background-image: url("../img/bg-hit.svg");
+		background-repeat: no-repeat;
+		background-size: 74px 73px;
+		background-position: 0 0;
+	}
 }
 
 .rates__table-line td{
 	width: 280px;
-	padding-top: 23px;
-	padding-bottom: 23px;
-	padding-left: 22px;
-	padding-right: 17px;
+	padding: 11px 17px 17px 22px;
 	color: @base-color;
 	background-color: #ffffff;
 	line-height: 30px;
@@ -72,18 +73,31 @@
 	.rates {
 		background-size: 100%;
 		background-position: -10px 0;
+		padding: 90px 0 10px;
 	}
 	.rates__table {
 		width: 100%;
 		margin-left: 0;
 		margin-bottom: 70px;
 	}
-	.rates__table-title th{
-		width: 20%;
 
+	.rates__table-title th{
+	width: 20%;
+	font-size: 16px;
+	padding: 13px 0 0px;
+	span {
+		font-size: 18px;
+	}
+	&:nth-child(3) {
+		background-image: url("../img/bg-hit-tablet.svg");
+		background-repeat: no-repeat;
+		background-size: 61px 61px;
+		background-position: 0 0;
+	}
 	}
 	.rates__table-line {
 		td {
+			padding: 6px 0 0 15px;
 			width: 20%;
 			font-size: 0;
 			&:not(.rates__first-column) {
@@ -108,7 +122,8 @@
 	}
 }
 @media (min-width: @desktop-width) {
-
+		.rates__table-title th{
+		width: 20%;}
 }
 
 

@@ -8,7 +8,7 @@
 }
 
 .links-application__img {
-	margin: 0 -20px;
+	margin: 16px -20px 0;
 	height: 462px;
 	display: flex;
 	align-items: flex-end;
@@ -20,7 +20,7 @@
 .links-application__about {
 	background-color: #1d2631;
 	margin: 0 -20px;
-	padding: 27px 20px 35px;
+	padding: 30px 20px 30px;
 	text-align: center;
 	}
 
@@ -28,7 +28,7 @@
 .links-application__btn {
 	display: block;
 	width: 100%;
-	max-width: 280px;
+	width: 280px;
 	margin: 0 auto;
 	border: 2px solid #ffffff;
 	border-radius: 50px;
@@ -48,7 +48,7 @@
 	align-items: baseline;
 	list-style: none;
 	padding: 0;
-	margin: 20px 0;
+	margin: 34px 0 17px;
 }
 
 .links-application__item {
@@ -68,7 +68,7 @@
 	.links-application {
 		background-image: url("../img/bg-back-tablet@1x.jpg");
 		background-size: cover;
-		padding: 200px 0 0;
+		padding: 207px 0 8px;
 	}
 	.links-application__wrapper {
 		padding-bottom: 105px;
@@ -79,8 +79,8 @@
 		height: auto;
 		display: block;
 		position: absolute;
-		right: 0;
-		bottom: 0;
+		right: -20px;
+		bottom: -8px;
 	}
 	.links-application__about {
 		padding: 0;
@@ -93,32 +93,49 @@
 	.links-application__title {
 		display: block;
 		font-size: 40px;
-		line-height: 40px;
+		line-height: 45px;
 		font-weight: 300;
 		color: #ffffff;
-		max-width: 200px;
-		margin: 0 auto 30px;
+		width: 200px;
+		margin: 0 auto 36px;
+	}
+	.links-application__list {
+		margin: 47px 0 31px;
 	}
 	.links-application__text {
 		font-size: 18px;
 	}
+	.links-application__btn {
+		width: 300px;
+}
 }
 @media (min-width: @desktop-width) {
 	.links-application {
 		background-image: url("../img/bg-back-desktop@1x.jpg");
-		padding-top: 240px;
+		padding-top: 268px;
 	}
 	.links-application__wrapper {
 		padding-bottom: 140px;
 	}
+	.links-application__title {
+		font-size: 50px;
+		line-height: 60px;
+		width: 300px;
+		margin: 0 auto 55px;
+
+	}
 	.links-application__btn {
-		margin-bottom: 50px;
+		margin-bottom: 0px;
+		font-size: 21px;
+		line-height: 18px;
 	}
 	.links-application__list {
-		margin-bottom: 40px;
+		margin: 67px 0 49px;
 	}
 	.links-application__img {
 		height: 644px;
+		right: 43px;
+		bottom: 15px;
 		img {
 		margin-right: -160px;
 		height: 100%;
