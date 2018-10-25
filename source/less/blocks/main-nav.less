@@ -8,8 +8,16 @@
 .main-nav__toggle {
 	position:absolute;
 	display: block;
-	top: 30px;
-	right: 30px;
+	width: 25px;
+	height: 25px;
+	top: 21px;
+	right: 18px;
+	border: none;
+	background-color: transparent;
+	background-image: url("..img/icon-menu-cross.svg");
+	background-repeat: no-repeat;
+	background-size: 23px 23px;
+	background-position: 0 0;
 }
 
 .main-nav__wrapper {
@@ -43,23 +51,29 @@
 
 @media (min-width: @desktop-width) {
 	.main-nav {
-		flex-direction:row;
-		align-self: center;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 		background-color: transparent;
 	}
 	.main-nav__wrapper {
 	}
 	.main-nav__list {
 	width: 655px;
-	text-align: left;
 	display: flex;
+	justify-content: space-between;
 	}
 
 	.main-nav__item {
+	padding: 3px 5px 4px 9px;
 	line-height: 18px;
 	font-weight: normal;
 	text-transform: none;
 	border: none;
+	&:last-child {
+		padding-right: 16px;
+		padding-left: 20px;
+	}
 	}
 	.main-nav__toggle {
 		display: none;

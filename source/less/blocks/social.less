@@ -3,7 +3,7 @@
 }
 
 .social__list {
-	margin: 0;
+	margin: 0 0 0 11px;
 	padding: 0;
 	list-style: none;
 	display: flex;
@@ -25,7 +25,13 @@
 	height: 50px;
 	border-radius: 50%;
 	border: 3px solid #e9ebec;
-
+	fill: @base-color_red;
+	&:hover {
+		border: 3px solid #000000;
+	}
+	&:active {
+		opacity: 0.9;
+	}
 
 	&--twitter {}
 
@@ -33,3 +39,4 @@
 
 	&--youtube {}
 }
+

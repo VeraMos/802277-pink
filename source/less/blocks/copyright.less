@@ -6,9 +6,13 @@
 
 .copyright__text {
 	margin-right: 15px;
+	line-height: 18px;
+	color: @base-color;
+	font-weight: normal;
 }
 
 .copyright__link-btn {
+	margin-top: 6px;
 	fill: @base-color_red;
 	svg {
 		display: block;
@@ -20,4 +24,9 @@
 	text-align: right;
 	justify-content: flex-end;
 }
+}
+@media (min-width: @desktop-width) {
+	.copyright__text {
+		font-size: 18px;
+	}
 }
