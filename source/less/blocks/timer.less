@@ -6,10 +6,10 @@
 
 @media (min-width: @tablet-width) {
 	.timer {
+		margin-bottom: 49px;
 	}
 	.timer__wrapper {
 		margin-top: 60px;
-		margin-bottom: 49px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -48,8 +48,36 @@
 	}
 }
 @media (min-width: @desktop-width) {
+	.timer {
+		background-color: #f2f2f2;
+		padding: 40px 0 65px 0;
+		margin-bottom: 75px;
+	}
+	.timer__wrapper {
+		margin: 0 auto;
+	}
+	.timer__description {
+		width: 574px;
+		padding: 0px 50px 0px 0;
+	}
+	.timer__title {
+		padding: 64px 0 20px 0;
+	}
+	.timer__text {
+		font-size: 18px;
+		line-height: 30px;
+		padding: 0 0 35px 0;
+	}
+	.timer__link {
+		font-size: 18px;
+		line-height: 30px;
+	}
 	.timer__image {
 		max-width: 370px;
+		img{
+			width: 298px;
+			height: 345px;
+		}
 	}
 }
 @media (min-width: 959px) {

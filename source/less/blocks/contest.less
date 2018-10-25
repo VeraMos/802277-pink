@@ -6,6 +6,12 @@
 	background-repeat: no-repeat;
 	background-position: 0px -60px;
 	background-size: cover;
+
+	@media (min-resolution: @retina-dpi),
+		(min-resolution: @retina-dppx) {
+		background-image: url("../img/bg-back-mobile@2x.jpg");
+		background-size: cover;
+		}
 	}
 .contest__title {
 	margin: 0;
@@ -63,6 +69,12 @@
 	line-height: 30px;
 	padding-left: 19px;
 	border: 2px solid #e5e5e5;
+	&:hover {
+		border: 2px solid @base-color;
+	}
+	&:active {
+		border: 2px solid @base-color_red;
+	}
 }
 
 .contest__filters {
@@ -190,7 +202,7 @@
 	}
 }
 .contest__button-wrap {
-	margin-bottom: 60px;
+	margin-bottom: 53px;
 }
 
 .contest__btn {
@@ -217,6 +229,11 @@
 		background-repeat: no-repeat;
 		background-position: center 0;
 		background-size: auto;
+
+		@media (min-resolution: @retina-dpi),
+		(min-resolution: @retina-dppx) {
+		background-image: url("../img/bg-back-tablet@2x.jpg");
+		}
 	}
 	.contest__title {
 		font-size: 50px;
@@ -364,18 +381,21 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: baseline;
+			margin-bottom: 46px;
 		}
 	.contest__legend {
 		min-width: 190px;
 	}
-	.contest__button-wrap {
-	margin-bottom: 46px;
-}
 }
 
 @media (min-width: @desktop-width) {
 	.contest__title-wrapper {
 	background-image: url("../img/bg-back-desktop@1x.jpg");
+
+	@media (min-resolution: @retina-dpi),
+		(min-resolution: @retina-dppx) {
+		background-image: url("../img/bg-back-desktop@2x.jpg");
+		}
 	}
 		.contest__title {
 		padding: 226px 0 104px;
@@ -517,7 +537,7 @@
 		color:@base-color;
 	}
 	.contest__button-wrap {
-	margin-bottom: 32px;
+	margin-bottom: 52px;
 }
 }
 @media (max-width: 659px) {
