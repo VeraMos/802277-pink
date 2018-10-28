@@ -1,12 +1,19 @@
 .btn() {
-	font-family:inherit;
-	font-size: 18px;
-	line-height: 30px;
-	font-weight: 700;
-	padding-top: 17px;
-	padding-bottom: 17px;
-	text-transform: uppercase;
-	color:#ffffff;
-	background-color: @base-color_btn;
-	border: none;
+  font-family:inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-transform: uppercase;
+  color:#ffffff;
+  background-color: @base-color_btn;
+  border: none;
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
