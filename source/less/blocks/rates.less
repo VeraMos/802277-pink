@@ -33,6 +33,7 @@
   font-weight: 700;
   text-transform: uppercase;
   padding: 18px 0 21px;
+  border: 1px solid #e5e5e5;
   span {
     display: block;
     font-size: 24px;
@@ -97,6 +98,7 @@
     background-position: 0 0;
     padding: 87px 0 10px;
   }
+
   .rates__table {
     width: 100%;
     margin-left: 0;
@@ -123,9 +125,10 @@
     &::before {
       top: 3px;
       left: 4px;
+      }
     }
   }
-  }
+
   .rates__table-line {
     td {
       padding: 6px 15px 4px 15px;
@@ -136,9 +139,11 @@
       }
     }
   }
+
   .rates__table-content {
   justify-content: center;
-}
+  }
+
   .rates__first-column{
     padding: 15px;
     padding-right: 0;
@@ -151,27 +156,33 @@
       text-align: left;
     }
   }
+
   .rates__toggles {
     .visually-hidden()
   }
 }
+
 @media (min-width: @desktop-width) {
   .rates {
     padding: 167px 0 23px;
     background-position: 50% 0;
   }
+
     .rates__table-title th {
     width: 20%;
   }
+
     .rates__table {
     width: 940px;
     margin: 0 auto 70px;
   }
+
   .rates__table-line {
     td {
       padding: 14px 0 8px 0px;
     }
   }
+
   .rates__table-title th {
     padding: 16px 0 20px;
     font-size: 18px;
@@ -181,7 +192,7 @@
       line-height: 30px;
       margin-top: 2px;
     }
-}
+  }
   .rates__first-column {
     span {
       font-size: 18px;

@@ -3,14 +3,17 @@
   max-width: 320px;
   margin: 0 auto;
   padding-top: 40px;
-  display: flex;
-  flex-direction: column;
+   flex-direction: column;
   align-items: center;
+  display: none;
   &--error {
     //min-height:291px;
   }
   &--success {
     //min-height: 380px;
+  }
+  &--active {
+    display: flex;
   }
 }
 
@@ -62,20 +65,25 @@
       //min-height: 356px;
     }
   }
+
   .modal__inner {
       max-width: 320px;
     }
+
   .modal__title {
     font-size: 30px;
     line-height: 40px;
   }
+
   .modal-text {
     font-size: 18px;
   }
+
   .modal__btn-wrap {
     width: 100%;
     text-align: center;
   }
+
   .modal__button {
     width: 300px;
   }
@@ -86,19 +94,21 @@
     max-width: 785px;
     //height: 375px;
   }
+
   .modal__inner {
     max-width: 410px;
     &--error {
     width: 360px;
     }
-}
+  }
+
   .modal__button {
     &--success {
       width: 460px;
     }
   }
+
   .modal__btn-wrap {
     background-color: @base-color_gray;
   }
-
 }
