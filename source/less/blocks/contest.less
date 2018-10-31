@@ -1,9 +1,11 @@
 .contest {
 
 }
+
 .contest__title-wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-color: #283645;
   background-position: 0px 15px;
   background-size: cover;
 
@@ -22,7 +24,7 @@
   font-weight: 300;
   line-height: 30px;
   text-align: center;
-  padding: 112px 0 52px;
+  padding: 110px 0 50px;
 }
 
 .contest__description {
@@ -38,6 +40,9 @@
 
 .contest__wrapper {
   padding-bottom: 24px;
+  &--short {
+  padding: 4px 0 25px;
+  }
 }
 
 .contest__label {
@@ -45,14 +50,14 @@
   color: @base-color_red;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   &--feeling {
     display: block;
     color: @base-color_red;
-    text-align:center;
+    text-align: center;
     line-height: 30px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 
@@ -65,11 +70,12 @@
 }
 
 .contest__input {
+  margin-top: 5px;
   width: 100%;
-  height: 70px;
+  height: 63px;
   font-size: 18px;
   line-height: 30px;
-  padding-left: 19px;
+  padding: 20px 0 20px 22px;
   border: 2px solid #e5e5e5;
   &:hover {
     border: 2px solid @base-color;
@@ -82,8 +88,11 @@
 .contest__filters {
   background-color: #f2f2f2;
   border: none;
-  margin: 0 -20px 32px;
+  margin: 0 -20px 30px;
   padding-top: 25px;
+  &--radio {
+    padding-top: 24px;
+  }
 }
 
 .contest__filters-title {
@@ -110,18 +119,17 @@
     padding: 11px 20px 3px;
   }
   &--radio {
-    padding: 0px 20px 19px;
+    padding: 0px 20px 16px;
   }
 }
 
 .contest__filters-item {
-  margin-bottom: 35px;
+  margin-bottom: 24px;
   color: @base-color;
   font-size: 18px;
   line-height: 31px;
   &--radio {
-    margin: 0;
-    padding: 8px 0 19px;
+    margin: 0 0 22px 0;
   }
 }
 
@@ -134,12 +142,12 @@
 .contest__filters-checkbox {
   & + label {
     &::before {
-       content: "";
-       position: absolute;
-       top: 15px;
+      content: "";
+      position: absolute;
+      top: 15px;
       left: -10px;
-      width: 35px;
-      height: 35px;
+      width: 38px;
+      height: 38px;
       border: 2px solid #e5e5e5;
       background-color: #ffffff;
     }
@@ -160,7 +168,7 @@
   content: "";
   position: absolute;
   top: 25px;
-  left: -3px;
+  left: -1px;
   width: 22px;
   height: 16px;
   background-image: url("../img/icon-yes.svg");
@@ -170,8 +178,10 @@
 }
 
 .contest__filters-label {
-  padding-left: 57px;
-  padding-top: 16px;
+  padding: 23px 0 0px 60px;
+  &--checkbox {
+    padding: 18px 0 9px 60px;
+  }
 }
 
 .contest__radio-legend {
@@ -183,8 +193,8 @@
     &::before {
     content: "";
     position: absolute;
-    top: 13px;
-    left: -11px;
+    top: 20px;
+    left: -9px;
     width: 38px;
     height: 38px;
     border: 2px solid #e5e5e5;
@@ -207,10 +217,10 @@
 .contest__filters-radio:checked +label::after {
   content: "";
   position: absolute;
-  top: 23px;
-  left: 1px;
-  width: 15px;
-  height: 15px;
+  top: 32px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
   border: 2px solid @base-color_red;
   border-radius: 50%;
   background-color: @base-color_red;
@@ -230,6 +240,7 @@
 
 .contest__textarea {
   &--wrap {
+    margin-top: 0;
     margin-bottom: 46px;
   }
 }
@@ -249,11 +260,14 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  text-align:center;
+  text-align: center;
     sup {
-      color:@base-color_red;
-  }
+      color: @base-color_red;
+      font-size: 100%;
+      top: 0;
+    }
 }
+
 
 @media (min-width: @tablet-width) {
   .contest__title-wrapper {
@@ -272,11 +286,11 @@
   .contest__title {
     font-size: 50px;
     line-height: 58px;
-    padding: 188px 0 78px;
+    padding: 184px 0 82px;
   }
 
   .contest__description {
-    margin: 91px 0 71px;
+    margin: 91px 0 66px;
     font-size: 18px;
     padding: 0 62px ;
   }
@@ -288,14 +302,14 @@
   }
 
   .contest__wrapper {
-    padding-bottom: 14px;
+    padding-bottom: 21px;
     order: -2;
     display: flex;
     flex-direction: column;
     &--short {
       order: 0;
       border: 2px solid #e5e5e5;
-      padding: 31px 60px 0px;
+      padding: 30px 60px 0px;
       margin-bottom: 50px;
     }
   }
@@ -305,7 +319,7 @@
     margin: -45px auto 30px;
     background-color: #ffffff;
     padding: 0;
-    color:@base-color_red;
+    color: @base-color_red;
     text-transform: uppercase;
     text-align: center;
   }
@@ -321,23 +335,26 @@
   }
 
   .contest__text {
-  margin:0 20px 0 0;
+  margin: 0 20px 0 0;
   &--column {
     margin: 10px 0 28px 18px;
     }
   }
 
   .contest__input {
-    height: 66px;
+    margin: 5px 0 -2px;
+    padding: 20px 0 20px 19px;
     background-repeat: no-repeat;
     background-position: right 19px top 50%, 100% 0;
     &--tel {
-    background-image: url(../img/icon-phone.svg),
-    linear-gradient(to left, #e5e5e5 60px, transparent 60px)
+      padding: 20px 0 20px 17px;
+      background-image: url(../img/icon-phone.svg),
+      linear-gradient(to left, #e5e5e5 60px, transparent 60px)
     }
     &--email {
-    background-image: url(../img/icon-mail.svg),
-    linear-gradient(to left, #e5e5e5 60px, transparent 60px)
+      padding: 20px 0 20px 17px;
+      background-image: url(../img/icon-mail.svg),
+      linear-gradient(to left, #e5e5e5 60px, transparent 60px)
     }
   }
 
@@ -360,16 +377,19 @@
     margin: -36px auto 30px;
     background-color: #ffffff;
     &--checkbox {
-      width: 100%;
+      width: 437px;
       margin: -47px auto 30px;
+      padding: 14px 0 0;
     }
   }
 
-  .contest__textarea--wrap {
+  .contest__textarea {
+    &--wrap {
     border: 2px solid #e5e5e5;
     padding: 0 60px 43px;
     order: 2;
-    margin-top: 21px;
+    margin-top: 24px;
+    }
   }
 
   .contest__filters-label {
@@ -387,26 +407,29 @@
 
   .contest__filters-list {
     &--radio {
-    padding: 0 20px 29px;
+    padding: 9px 20px 14px;
     }
     &--checkbox {
-    padding: 0 20px 3px;
+    padding: 6px 20px 3px;
     }
   }
 
   .contest__filters-item {
+    &--radio {
+      margin: -3px 0 32px 0;
+    }
     &--checkbox {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     }
   }
 
   .contest__filters-checkbox +label::before {
-  top: 2px;
-  left: 30px;
+  top: 7px;
+  left: 27px;
   }
 
   .contest__filters-checkbox:checked +label::after {
-  top: 12px;
+  top: 18px;
   left: 35px;
   }
 
@@ -442,7 +465,11 @@
   }
 
   .contest__legend {
-    min-width: 190px;
+    //min-width: 190px;
+    sup {
+      font-size: 100%;
+      top: 0;
+    }
   }
 }
 
@@ -477,6 +504,7 @@
     margin-top: 15px;
     padding-bottom: 0;
     &--short {
+      padding: 28px 60px 0px;
     }
   }
 
@@ -494,12 +522,12 @@
   .contest__filters {
     &--checkbox {
       flex-grow: 1;
+      margin-top: 15px;
       }
     &--radio {
-      margin-bottom: 52px;
-      margin-top: 10px;
-      max-width: 430px;
-      //padding-left: 50px;
+      margin-bottom: 50px;
+      margin-top: 12px;
+      max-width: 434px;
       flex-grow: 1;
     }
   }
@@ -507,16 +535,17 @@
   .contest__filters-title {
     text-align: center;
     &--checkbox {
-      width: 100%;
+      //width: auto;
     }
     &--radio {
       width: 365px;
+      margin: -32px auto 30px;
     }
   }
 
   .contest__text {
   &--column {
-    margin: 10px 0 0px 18px;
+    margin: 11px 0 0px 19px;
     }
   }
 
@@ -525,16 +554,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 50px 6px;
+    padding: 13px 50px 3px;
+    max-width: 917px;
     }
     &--radio {
-      padding: 0 0 29px 44px;
+      padding: 8px 0 17px 44px;
     }
   }
 
   .contest__filters-item {
       &--checkbox {
-        margin-bottom: 48px;
+        margin-bottom: 39px;
       &:first-child {
         order: -2;
       }
@@ -560,34 +590,40 @@
   }
 
   .contest__filters-checkbox + label::before {
-  left: 0px;
+    top: 0;
+    left: -1px;
   }
 
   .contest__filters-checkbox:checked +label::after {
-    top:11px;
+    top: 11px;
     left: 6px;
   }
 
   .contest__filters-radio + label::before {
-  left: 20px;
+  left: 18px;
+  top: 11px;
   }
 
   .contest__filters-radio:checked +label::after {
   left: 30px;
+  top: 23px;
   }
 
   .contest__input {
     position: relative;
     &--tel {
       width: 374px;
+      padding: 20px 0 20px 17px;
     }
     &--email {
       width: 374px;
+      padding: 20px 0 20px 19px;
     }
   }
 
   .contest__label {
-    &--column {
+    &--feeling {
+      margin: -17px auto 30px;
     }
   }
 
@@ -599,12 +635,12 @@
   .contest__legend {
     font-size: 14px;
     line-height: 30px;
-    color:@base-color;
+    color: @base-color;
   }
 
   .contest__button-wrap {
-  margin-bottom: 6px;
-}
+    margin-bottom: 6px;
+  }
 }
 
 @media (max-width: 659px) {

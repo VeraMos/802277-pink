@@ -5,6 +5,7 @@
 .photo__title-wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-color: #283645;
   background-position: 0px 15px;
   background-size: cover;
 
@@ -52,7 +53,7 @@
 
 .photo__img-panorama {
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   padding: 5px 20px;
   margin: 0;
@@ -83,10 +84,10 @@
   justify-content: flex-start;
   min-height: 120px;
   background-color: @base-color_gray;
-  margin: 0 0 22px;
-  padding: 16px 30px 22px 18px;
+  margin: 0 0 21px;
+  padding: 17px 30px 24px 18px;
   &--panorama{
-    padding: 16px 20px 26px 19px;
+    padding: 18px 20px 25px 19px;
     margin: 0 0 19px;
   }
   &:nth-child(3) {
@@ -193,7 +194,7 @@
 
 .photo__filter-control {
   display: flex;
-  margin:0 auto;
+  margin: 0 auto;
   justify-content: space-between;
   max-width: 205px;
   align-items: center;
@@ -221,7 +222,7 @@
   svg {
     width: 48px;
     height: 48px;
-    fill:#b5b9be;
+    fill: #b5b9be;
   }
 }
 
@@ -328,7 +329,13 @@
   .photo__item{
     width: 50%;
     padding: 0 8px;
-      &--panorama {
+    &:nth-child(odd) {
+     padding-left: 10px;
+    }
+    &:nth-child(even) {
+     padding-left: 8px;
+    }
+    &--panorama {
       padding: 0;
       width: 100%;
     }
@@ -340,8 +347,8 @@
   padding-left: 0;
   margin-left: -2px;
     &::before {
-    top: 1px;
-    right: 0;
+    top: -1px;
+    right: 2px;
     left: auto;
     }
     &--panorama {
@@ -357,8 +364,8 @@
 
   .photo__photo-info {
     min-height: 153px;
-    padding: 25px 30px 24px 27px;
-    margin: 0 0 23px;
+    padding: 25px 30px 24px 26px;
+    margin: 0 0 22px;
     &--panorama {
       min-height: 120px;
       flex-direction: row;
@@ -366,8 +373,8 @@
       align-items: center;
       background-color: @base-color_gray;
       width: 100%;
-      padding: 24px 35px 17px 32px;
-      margin: 0 0 48px;
+      padding: 24px 35px 17px 34px;
+      margin: 0 0 50px;
     }
   }
 
@@ -379,7 +386,7 @@
 
   .photo__counter {
     &--panorama {
-      padding-right: 25px;
+      padding-right: 23px;
     }
   }
 
@@ -397,8 +404,8 @@
   .photo__post-form {
     display: flex;
     justify-content: space-between;
-    padding: 58px 20px 46px;
-    margin: 0 -20px 0px;
+    padding: 56px 20px 46px;
+    margin: 0 -20px 4px;
   }
 
   .photo__wrapper {
@@ -426,13 +433,15 @@
   .photo__filter-label {
     &:first-child {
       margin-left: -2px;
+      margin-top: 2px;
     }
     &:nth-child(2) {
     margin-left: 2px;
-    margin-top: 2px;
+    margin-top: 4px;
   }
     &:nth-child(3) {
     margin-right: -4px;
+    margin-bottom: 2px;
     svg {
       width: 17px;
       height: 17px;
@@ -476,7 +485,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    padding: 34px 0px 18px;
+    padding: 35px 0px 18px;
     height: 72px;
     &::before {
     content: "";
@@ -488,10 +497,10 @@
     }
     &--one {
       height: 55px;
-      padding: 17px 0 0px;
+      padding: 18px 0 0px;
     }
     &--three {
-      padding: ;
+      //padding: ;
     }
   }
 }
@@ -624,6 +633,7 @@
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .photo__button-disabled {

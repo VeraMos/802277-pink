@@ -3,17 +3,11 @@
   max-width: 320px;
   margin: 0 auto;
   padding-top: 40px;
-   flex-direction: column;
+  flex-direction: column;
   align-items: center;
-  display: none;
-  &--error {
-    //min-height:291px;
-  }
-  &--success {
-    //min-height: 380px;
-  }
-  &--active {
-    display: flex;
+  display: flex;
+  &--no-active {
+    display: none;
   }
 }
 
@@ -92,7 +86,6 @@
 @media (min-width: @desktop-width) {
   .modal {
     max-width: 785px;
-    //height: 375px;
   }
 
   .modal__inner {
