@@ -237,40 +237,42 @@
 }
 
 
-.photo__button {
-  width: 280px;
-  margin: 18px auto 0;
+.photo__button-wrap {
+  margin-left: 20px ;
 }
 
-.photo__button-checked {
+.photo__button {
+  width: 280px;
+  margin: 36px auto 0;
+  &--checked {
   .photo-button();
   border: 2px solid @base-color_red;
   color: @base-color_red;
-  &:hover {
+    &:hover {
     border: none;
     background-color: @base-color_red;
     color: #ffffff;
-  }
-  &:active {
+    }
+    &:active {
     border: none;
     background-color: @base-color_red;
     color: rgba(255, 255, 255, 0.3);
+    }
   }
-}
-
-.photo__button-disabled {
+  &--disabled {
   .photo-button();
   margin-top: 12px;
   border: 2px solid #dddfe0;
   color: #dddfe0;
-  &:hover {
+    &:hover {
     border: 2px solid #b5b9be;
     color: #b5b9be;
-  }
-  &:active {
+    }
+    &:active {
     border: none;
     background-color: #b5b9be;
     color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
@@ -465,20 +467,26 @@
     margin: 0;
   }
 
-  .photo__button {
-    width: auto;
-    margin: 0 auto;
-  }
+.photo__button-wrap {
+    margin-left: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-  .photo__button-disabled {
-    width: 260px;
-    margin: 0 14px 6px 25px;
+.photo__button {
+    width: 257px;
+    margin: 0;
+    height: 51px;
+    align-items: center;
+    margin-bottom: 8px;
+    &--disabled {
+    }
+    &--checked {
+    margin-right: 20px;
+    margin-bottom: 24px;
   }
-
-  .photo__button-checked {
-    width: 260px;
-    margin: 0 14px 25px 25px ;
-  }
+}
 
   .photo__filter-range {
     margin: 0 18px 0 30px;
@@ -624,13 +632,16 @@
 
   .photo__wrapper {
     max-width: 410px;
+    width: 410px;
+    flex-shrink: 0;
+    padding-left: 2px;
   }
 
   .photo__post-image {
   }
 
   .photo__filter-control {
-  margin: 0 0 0 -9px;
+  margin: 0 0 0 -2px;
   padding: 0;
   }
 
@@ -668,27 +679,25 @@
       border: 1px solid #dddfe0;
     }
   }
+.photo__button-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+}
 
-  .photo__button {
-    width: 410px;
+.photo__button {
+    width: 184px;
     margin: 0;
     height: 51px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     margin-bottom: 8px;
-  }
-
-  .photo__button-disabled {
-    width: 184px;
-    margin-right: 10px;
-
-  }
-
-  .photo__button-checked {
-    width: 184px;
+    &--disabled {
+    }
+    &--checked {
     margin-right: 20px;
   }
+}
 }
 @media (max-width: 959px) {
   .photo__description {
